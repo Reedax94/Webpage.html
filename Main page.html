@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="icon" type="image/x-icon" href="Asura.png">
+    <link rel="stylesheet" href="Main page.css">
+</head>
+<body>
+   
+<div class="topnav">
+
+    
+    <div class="topnav-centered">
+      <a href="#home">Homepage</a>
+    </div>
+    
+    
+    <a href="#news">News</a>
+    <a href="http://127.0.0.1:5500/Contact.html" target="_blank">Contact</a>
+   <a href="http://127.0.0.1:5500/Asuraproj.html" target="_blank">Content</a>
+    
+    
+    <div class="topnav-right">
+    <input type="text" placeholder="Search..">
+      <a href="http://127.0.0.1:5500/About.html" target="_blank">About</a>
+      <a href="http://127.0.0.1:5500/Sign%20up.html#" target="_blank">Signup</a>
+    </div>
+  </div>
+  <button class="open-button" onclick="openForm()">Login</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email/Username</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+</body>
+</html>
+

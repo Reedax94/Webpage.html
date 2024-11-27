@@ -1,0 +1,61 @@
+body {
+    font-family: fantasy;
+    background-color: black;
+}
+* {
+    box-sizing: border-box;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid crimson;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: teal;
+    color: crimson;
+    padding: 12px 20px;
+    border: 2px solid crimson;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: dodgerblue;
+}
+.container {
+    border-radius: 5px;
+    background-color: rgb(63, 63, 63);
+    padding: 10px;
+}
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+h2 {
+    color: crimson;
+    font-family: fantasy;
+    text-align: center;
+}
+p {
+    color: crimson;
+    font-family: fantasy;
+    text-align: center;
+}
+label {
+    font-family: fantasy;
+    color: crimson;
+}
