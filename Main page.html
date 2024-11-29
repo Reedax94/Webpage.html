@@ -6,28 +6,30 @@
     <title>Main page</title>
     <link rel="icon" type="image/x-icon" href="Asura.png">
     <link rel="stylesheet" href="Main page.css">
+    <script src="https://kit.fontawesome.com/1eeddf75e7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   
-<div class="topnav">
 
-    
-    <div class="topnav-centered">
-      <a href="#home">Homepage</a>
-    </div>
-    
-    
-    <a href="#news">News</a>
-    <a href="http://127.0.0.1:5500/Contact.html" target="_blank">Contact</a>
-   <a href="http://127.0.0.1:5500/Asuraproj.html" target="_blank">Content</a>
-    
-    
-    <div class="topnav-right">
-    <input type="text" placeholder="Search..">
-      <a href="http://127.0.0.1:5500/About.html" target="_blank">About</a>
-      <a href="http://127.0.0.1:5500/Sign%20up.html#" target="_blank">Signup</a>
-    </div>
-  </div>
+    <div class="topnav">
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#signup">Sign up</a>
+        <div class="search-container">
+        <form action="/action_page.php">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa-solid fa-gear"></i>
+            </button>
+            <div class="dropdown-content">
+            <a href="#">Settings</a>
+            <a href="#">Profile</a>
+           </div>
+          </div>
+        </div>
+      </div>
   <button class="open-button" onclick="openForm()">Login</button>
 
 <div class="form-popup" id="myForm">

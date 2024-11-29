@@ -22,11 +22,11 @@ body {
   margin: 5px 0 22px 0;
   display: inline-block;
   border: 2px solid crimson;
-  background: rgb(83, 198, 159);
+  background: black;
+  color: crimson;
   font-family: fantasy;
 }
 input[type=text]:focus, input[type=password]:focus {
-  background-color: dodgerblue;
   outline: none;
 }
 hr {
@@ -34,8 +34,8 @@ hr {
   margin-bottom: 25px;
 }
 button {
-  background-color: darkgreen;
-  color: white;
+  background-color: black;
+  color: crimson;
   padding: 14px 20px;
   margin: 8px 0;
   border: 2px solid crimson;
@@ -44,15 +44,16 @@ button {
   opacity: 0.9;
 }
 button:hover {
-  opacity:1;
+  background-color: rgb(83, 198, 159);
 }
 .cancelbtn {
   padding: 14px 20px;
-  background-color: darkred;
+  background-color: black;
 }
 .cancelbtn, .signupbtn {
   float: left;
   width: 50%;
+  font-family: fantasy;
 }
 .container {
   padding: 16px;
@@ -62,8 +63,11 @@ button:hover {
   clear: both;
   display: table;
 }
-@media screen and (max-width: 300px) {
+@media screen and (min-width: 300px) {
   .cancelbtn, .signupbtn {
     width: 100%;
   }
+}
+::placeholder{
+    color: crimson;
 }
