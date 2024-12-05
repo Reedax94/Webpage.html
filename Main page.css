@@ -88,11 +88,11 @@ body {
 .topnav .search-container button:hover {
   background: rgb(83, 198, 159);
 }
-
 @media screen and (max-width: 600px) {
   .topnav .search-container {
     float: none;
   }
+
   .topnav a, .topnav input[type=text], .topnav .search-container button {
     float: none;
     display: block;
@@ -108,14 +108,17 @@ body {
 .dropdown {
     float: left;
     overflow: hidden;
+    font-family: fantasy;
 }
 .dropdown .dropbtn {
     font-size: 16px;
     border: none;
     outline: none;
     color: crimson;
+    font-family: fantasy;
     padding: 14px 16px;
     background-color: inherit;
+    font-family: inherit;
     margin: 0;
 }
 .dropdown:hover .dropbtn {
@@ -193,7 +196,6 @@ body {
   cursor: pointer;
   width: 100%;
   margin-bottom:10px;
-  opacity: 0.8;
 }
 
 .form-container .cancel {
@@ -216,4 +218,68 @@ a {
 input[type=text] {
     background-color: rgb(27, 27, 27);
     outline: none;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: crimson;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: rgb(83, 198, 159);
+}
+
+.container input:checked ~ .checkmark {
+  background-color: rgb(83, 198, 159);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+@media screen and (max-width: 600px) {
+  .form-container .form-popup .container .open-button {
+    float: none;
+}
 }

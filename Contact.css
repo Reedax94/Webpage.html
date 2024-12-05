@@ -77,3 +77,33 @@ select {
 select > option {
     color: crimson;
 }
+
+.home {
+    float: left;
+}
+.btn {
+    background-color: black;
+    border: none;
+    color: crimson;
+    padding: 12px 16px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: fantasy;
+}
+
+.btn:hover {
+    background-color: rgb(83, 198, 159);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+    background: #303030; 
+    }
+    ::-webkit-scrollbar-thumb {
+    background: crimson; 
+    }
+    ::-webkit-scrollbar-thumb:hover {
+    background: darkred; 
+    }
